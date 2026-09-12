@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Imagem provisória — Futura imagem de conteúdo sobre longevidade</title>
+  <desc id="desc">Placeholder amarelo 900 por 600 pixels, proporção 3:2, reutilizável em cartões de conteúdo relacionados a longevidade.</desc>
+  <rect width="900" height="600" fill="#F5D547"/>
+  <text x="450" y="270" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="bold" fill="#4A3B00">IMAGEM PROVISÓRIA</text>
+  <text x="450" y="325" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#4A3B00">Futura imagem de conteúdo sobre longevidade</text>
+  <text x="450" y="365" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#4A3B00">900 × 600</text>
+</svg>

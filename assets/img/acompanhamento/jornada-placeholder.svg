@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Imagem provisória — Futura imagem da jornada de acompanhamento</title>
+  <desc id="desc">Placeholder rosa 1200 por 800 pixels, proporção 3:2, reservado como apoio visual à seção da jornada de acompanhamento.</desc>
+  <rect width="1200" height="800" fill="#F2A6C1"/>
+  <text x="600" y="360" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="bold" fill="#5A1030">IMAGEM PROVISÓRIA</text>
+  <text x="600" y="425" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#5A1030">Futura imagem da jornada de acompanhamento</text>
+  <text x="600" y="475" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#5A1030">1200 × 800</text>
+</svg>

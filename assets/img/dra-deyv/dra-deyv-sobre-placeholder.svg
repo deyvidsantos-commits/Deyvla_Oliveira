@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Imagem provisória — Futura foto de apresentação da Dra. Deyvla</title>
+  <desc id="desc">Placeholder azul-claro 900 por 1100 pixels, proporção aproximada 9:11, reservado para a futura foto de apresentação da Dra. Deyvla na seção "Dra. Deyvla" da página inicial.</desc>
+  <rect width="900" height="1100" fill="#CFE3EF"/>
+  <text x="450" y="490" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="bold" fill="#1D3A4A">IMAGEM PROVISÓRIA</text>
+  <text x="450" y="560" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#1D3A4A">Futura foto de apresentação da Dra. Deyvla</text>
+  <text x="450" y="620" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#1D3A4A">900 × 1100</text>
+</svg>

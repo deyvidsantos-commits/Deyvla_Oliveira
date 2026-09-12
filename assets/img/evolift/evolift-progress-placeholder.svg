@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Imagem provisória — Futura visualização da evolução no EvoLift</title>
+  <desc id="desc">Placeholder azul-claro 1400 por 900 pixels, proporção 14:9, reservado para a seção de evolução ao longo do tempo.</desc>
+  <rect width="1400" height="900" fill="#CFE3EF"/>
+  <text x="700" y="410" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="bold" fill="#1D3A4A">IMAGEM PROVISÓRIA</text>
+  <text x="700" y="475" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#1D3A4A">Futura visualização da evolução no EvoLift</text>
+  <text x="700" y="525" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#1D3A4A">1400 × 900</text>
+</svg>

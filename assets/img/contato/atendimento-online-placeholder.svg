@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Imagem provisória — Futura imagem do atendimento online</title>
+  <desc id="desc">Placeholder amarelo 1200 por 800 pixels, proporção 3:2, reservado para a seção de atendimento online da página "Contato".</desc>
+  <rect width="1200" height="800" fill="#F5D547"/>
+  <text x="600" y="360" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="bold" fill="#4A3B00">IMAGEM PROVISÓRIA</text>
+  <text x="600" y="425" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#4A3B00">Futura imagem do atendimento online</text>
+  <text x="600" y="475" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#4A3B00">1200 × 800</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Imagem provisória — Futura imagem do EvoLift no acompanhamento</title>
+  <desc id="desc">Placeholder azul-claro 1200 por 900 pixels, proporção 4:3, reservado para a seção do EvoLift na página "Acompanhamento".</desc>
+  <rect width="1200" height="900" fill="#CFE3EF"/>
+  <text x="600" y="410" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="bold" fill="#1D3A4A">IMAGEM PROVISÓRIA</text>
+  <text x="600" y="475" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#1D3A4A">Futura imagem do EvoLift no acompanhamento</text>
+  <text x="600" y="525" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#1D3A4A">1200 × 900</text>
+</svg>
