@@ -26,11 +26,11 @@
   encontrado no projeto; único falso positivo de busca textual foi a palavra "Token" em uma
   tabela de cores de `docs/DESIGN_SYSTEM.md`.
 - Verificação nominal: número de WhatsApp, e-mail e nome oficial confirmados corretos; zero
-  ocorrência de "Deyvli" ou de corrupção do tipo "Deyvlala"/"Deyvlaa" no código; as únicas
-  ocorrências isoladas de "Dra. Deyv" remanescentes são as 5 já conhecidas e intencionalmente
-  preservadas em `pages/acompanhamento.html` (4 comentários técnicos invisíveis + 1 parágrafo do
-  CTA final), decisão herdada da atividade de correção nominal anterior — não foram alteradas
-  nesta publicação por não se tratar de correção de nome autorizada nesta atividade.
+  ocorrência de "Deyvli" ou de corrupção do tipo "Deyvlala"/"Deyvlaa" no código. As 5 ocorrências
+  isoladas de "Dra. Deyv" identificadas em `pages/acompanhamento.html` (4 comentários técnicos
+  invisíveis + 1 parágrafo do CTA final) foram corrigidas para "Dra. Deyvla" em uma atividade de
+  correção nominal pós-publicação (12/09/2026, commit próprio), restrita a essa página — zero
+  ocorrência isolada de "Dra. Deyv" permanece em qualquer arquivo de código do projeto.
 - Revisão de caminhos para compatibilidade com GitHub Pages como Project Site
   (`/Deyvla_Oliveira/`): todos os caminhos já eram relativos ao documento; nenhuma correção foi
   necessária.
