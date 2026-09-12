@@ -132,6 +132,12 @@ redes sociais não foram removidas do site — continuam em `index.html`, em
 - Testes nos principais tamanhos de tela.
 - Configuração de domínio e hospedagem.
 
+> **Nota:** a publicação básica no GitHub Pages (repositório
+> `deyvidsantos-commits/Deyvla_Oliveira`, branch `main`) já foi realizada em 12/09/2026 (ver
+> D-018 em `docs/DECISION_LOG.md`) para permitir o acompanhamento público do desenvolvimento.
+> Isso não substitui a Fase 7: domínio próprio, revisão final de conteúdo, políticas jurídicas e
+> os demais itens acima continuam pendentes.
+
 ## Revisão visual global (12/09/2026)
 
 Transversal às seis páginas existentes (Fases 1–6); não é uma nova fase editorial e não altera

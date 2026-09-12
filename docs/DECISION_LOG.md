@@ -178,3 +178,24 @@ seções, conforme escopo desta correção. Nenhuma página, funcionalidade, com
 foi realizado. Ver `docs/GLOBAL_VISUAL_REFINEMENT.md` (nota de correção) e
 `docs/CONTENT_REQUIREMENTS.md` (seção 5, atualizada) para o registro completo.
 
+## D-018 — Publicação pública no GitHub Pages
+
+**Data:** 12/09/2026  
+**Estado:** aprovada
+
+O site foi publicado no repositório público autorizado
+`https://github.com/deyvidsantos-commits/Deyvla_Oliveira`, branch `main`, commit `6cca5ae`
+("feat: publish Dra. Deyvla institutional website"). O GitHub Pages foi ativado (origem: branch
+`main`, diretório `/`) e o build foi confirmado como concluído (`built`). O endereço público é
+`https://deyvidsantos-commits.github.io/Deyvla_Oliveira/`.
+
+Antes da publicação, foi realizada verificação de segurança (nenhuma credencial, token, chave
+privada ou dado sensível encontrado) e verificação nominal (nome oficial, e-mail e WhatsApp
+confirmados corretos; zero ocorrência de "Deyvli" ou de corrupção do tipo "Deyvlala"/"Deyvlaa").
+Como o projeto já utilizava exclusivamente caminhos relativos ao documento, nenhuma alteração de
+caminho foi necessária para compatibilidade com o GitHub Pages como Project Site
+(`/Deyvla_Oliveira/`). Foram criados `.nojekyll` e um novo `README.md` no formato solicitado, e
+o `.gitignore` foi ampliado. Nenhum design, texto editorial, funcionalidade ou fase posterior foi
+alterado ou iniciado nesta atividade. Ver `docs/PROJECT_STATE.md` (seção "Publicação no GitHub
+Pages") para o registro completo dos testes realizados antes e depois da publicação.
+

@@ -1,8 +1,72 @@
 # Project State — Site Dra. Deyv
 
 **Atualizado em:** 12/09/2026  
-**Fase atual:** Melhoria visual pontual do menu global (transversal às 6 páginas; não é uma nova fase editorial)  
-**Estado geral:** Fase 1 — aprovada internamente. Fase 2 — aprovada internamente. Fase 3 — aprovada internamente. Fase 4 — aprovada internamente. Fase 5 — aprovada internamente. Fase 6 — implementada e aguardando revisão interna. Revisão visual global — implementada e aguardando revisão interna. Correção nominal global — implementada e aguardando revisão interna. Melhoria visual pontual do menu global — implementada e aguardando revisão interna.
+**Fase atual:** Publicação no GitHub Pages (transversal; não é uma nova fase editorial)  
+**Estado geral:** Fase 1 — aprovada internamente. Fase 2 — aprovada internamente. Fase 3 — aprovada internamente. Fase 4 — aprovada internamente. Fase 5 — aprovada internamente. Fase 6 — implementada e aguardando revisão interna. Revisão visual global — implementada e aguardando revisão interna. Correção nominal global — implementada e aguardando revisão interna. Melhoria visual pontual do menu global — implementada e aguardando revisão interna. Publicação no GitHub Pages — publicada e verificada.
+
+## Publicação no GitHub Pages (12/09/2026)
+
+### Repositório e branch
+
+- Repositório público: `https://github.com/deyvidsantos-commits/Deyvla_Oliveira`
+- Branch de publicação: `main`
+- Commit publicado: `6cca5ae` (`6cca5ae36f9cbd054d8cadfd7530bf24051c2a2c`) —
+  "feat: publish Dra. Deyvla institutional website"
+- Data do commit/push: 12/09/2026
+
+### GitHub Pages
+
+- Origem configurada: branch `main`, diretório `/` (Deploy from a branch).
+- Estado do build no momento da verificação: `built`.
+- URL pública: `https://deyvidsantos-commits.github.io/Deyvla_Oliveira/`
+
+### O que foi feito
+
+- Verificação de segurança prévia: nenhum `.env`, token, senha, chave privada ou credencial
+  encontrado no projeto; único falso positivo de busca textual foi a palavra "Token" em uma
+  tabela de cores de `docs/DESIGN_SYSTEM.md`.
+- Verificação nominal: número de WhatsApp, e-mail e nome oficial confirmados corretos; zero
+  ocorrência de "Deyvli" ou de corrupção do tipo "Deyvlala"/"Deyvlaa" no código; as únicas
+  ocorrências isoladas de "Dra. Deyv" remanescentes são as 5 já conhecidas e intencionalmente
+  preservadas em `pages/acompanhamento.html` (4 comentários técnicos invisíveis + 1 parágrafo do
+  CTA final), decisão herdada da atividade de correção nominal anterior — não foram alteradas
+  nesta publicação por não se tratar de correção de nome autorizada nesta atividade.
+- Revisão de caminhos para compatibilidade com GitHub Pages como Project Site
+  (`/Deyvla_Oliveira/`): todos os caminhos já eram relativos ao documento; nenhuma correção foi
+  necessária.
+- Criados `.nojekyll` (vazio, na raiz) e `README.md` reescrito no formato solicitado, com o link
+  público. `.gitignore` ampliado (`.env`, `.env.*`, `.idea/`, `dist/`, `coverage/`, mantendo os
+  padrões já existentes).
+- Git inicializado localmente (`git init -b main`), remote `origin` configurado para o
+  repositório autorizado, commit único criado com os 49 arquivos do projeto (site + docs +
+  assets), push para `origin/main`, GitHub Pages ativado via `gh api` e build confirmado como
+  `built`.
+
+### Testes
+
+- Local (antes do commit): as seis páginas retornaram HTTP 200 em todos os recursos
+  (CSS/JS/SVGs), console sem erros, fontes carregadas, menu desktop/mobile funcionais, sem
+  rolagem horizontal em 375/768/1024/1440px.
+- Público (depois da publicação): as seis URLs retornaram HTTP 200
+  (`https://deyvidsantos-commits.github.io/Deyvla_Oliveira/` e as cinco subpáginas); console sem
+  erros; nenhuma imagem com falha de carregamento; fonte Manrope confirmada via
+  `getComputedStyle`; link "Início" testado com clique real a partir de `pages/contato.html`,
+  retornando corretamente para `index.html` dentro do mesmo repositório; WhatsApp e e-mail
+  confirmados com os valores oficiais.
+
+### Pendências
+
+Nenhuma pendência de publicação. Dados oficiais ainda não fornecidos (logomarca definitiva,
+fotografias, CRM, RQE, especialidades, biografia, redes sociais, etc.) continuam reservados
+para a fase final, conforme já registrado em `docs/CONTENT_REQUIREMENTS.md` e
+`docs/GLOBAL_VISUAL_REFINEMENT.md`.
+
+### Próxima ação recomendada
+
+Validação da publicação pelos gestores do projeto e pela Dra. Deyvla. Nenhuma fase posterior foi
+iniciada.
+
+---
 
 ## Melhoria Visual Pontual do Menu Global (12/09/2026)
 
