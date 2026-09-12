@@ -1,8 +1,73 @@
 # Project State — Site Dra. Deyv
 
 **Atualizado em:** 12/09/2026  
-**Fase atual:** Publicação no GitHub Pages (transversal; não é uma nova fase editorial)  
-**Estado geral:** Fase 1 — aprovada internamente. Fase 2 — aprovada internamente. Fase 3 — aprovada internamente. Fase 4 — aprovada internamente. Fase 5 — aprovada internamente. Fase 6 — implementada e aguardando revisão interna. Revisão visual global — implementada e aguardando revisão interna. Correção nominal global — implementada e aguardando revisão interna. Melhoria visual pontual do menu global — implementada e aguardando revisão interna. Publicação no GitHub Pages — publicada e verificada.
+**Fase atual:** Substituição da Logomarca Oficial (transversal às 6 páginas; não é uma nova fase editorial)  
+**Estado geral:** Fase 1 — aprovada internamente. Fase 2 — aprovada internamente. Fase 3 — aprovada internamente. Fase 4 — aprovada internamente. Fase 5 — aprovada internamente. Fase 6 — implementada e aguardando revisão interna. Revisão visual global — implementada e aguardando revisão interna. Correção nominal global — implementada e aguardando revisão interna. Melhoria visual pontual do menu global — implementada e aguardando revisão interna. Publicação no GitHub Pages — publicada e verificada. Substituição da logomarca oficial — implementada e aguardando revisão visual.
+
+## Substituição da Logomarca Oficial (12/09/2026)
+
+### O que foi feito
+
+- A logomarca provisória (`assets/img/logo/logo-placeholder.svg`) foi substituída pela
+  logomarca oficial da Dra. Deyvla Oliveira em todas as seis páginas: favicon, logomarca do
+  cabeçalho e logomarca do rodapé.
+- Novo arquivo: `assets/img/logo/logo-dra-deyvla-oliveira.png` — PNG, 600 × 240 px (proporção
+  5:2), fundo transparente (canal alpha confirmado tecnicamente: assinatura PNG válida,
+  estrutura de chunks íntegra, 4 cantos com alpha 0, símbolo dourado de três folhas + texto
+  "DRA. DEYVLA OLIVEIRA" opacos no centro).
+- Uma primeira versão do arquivo enviada (2172 × 724 px, proporção 3:1) não correspondia à
+  especificação (600 × 240, 5:2); a atividade foi pausada e a decisão de aguardar o arquivo
+  corrigido foi tomada antes de qualquer alteração nos HTMLs. O arquivo corrigido (600 × 240,
+  5:2) foi verificado tecnicamente antes do início da substituição.
+- `<img>` do cabeçalho e do rodapé atualizados com `alt="Dra. Deyvla Oliveira"` e
+  `decoding="async"`; `width="600"`/`height="240"` mantidos (agora correspondem exatamente ao
+  arquivo real). `loading="lazy"` preservado apenas no rodapé; não adicionado ao cabeçalho.
+  `<link rel="icon">` atualizado para o novo PNG (`type="image/png"`) nas seis páginas.
+- CSS (`css/style.css`): `.logo-img` migrada de altura fixa para `width: clamp(150px, 14vw,
+  170px); height: auto; object-fit: contain;` no desktop e `width: 140px;` no mobile
+  (≤768px), sem fundo, borda, caixa ou sombra atrás da imagem — a transparência do PNG permanece
+  visível sobre o verde do cabeçalho/rodapé. `--header-height` ajustada de 92px para 100px
+  (desktop) e de 80px para 88px (mobile) para acompanhar a nova altura real do cabeçalho e
+  preservar o posicionamento correto das âncoras (`scroll-margin-top`).
+- `assets/img/logo/logo-placeholder.svg` removido do projeto (`git rm`) após confirmação de
+  zero referências ativas restantes.
+
+### Arquivos alterados
+
+- `index.html`, `pages/sobre.html`, `pages/acompanhamento.html`, `pages/evolift.html`,
+  `pages/conteudos.html`, `pages/contato.html`
+- `css/style.css`
+- `assets/img/logo/logo-dra-deyvla-oliveira.png` (novo)
+- `assets/img/logo/logo-placeholder.svg` (removido)
+- `docs/PROJECT_STATE.md`, `docs/DECISION_LOG.md`, `docs/GLOBAL_VISUAL_REFINEMENT.md`
+
+### Testes
+
+- Inspeção técnica do PNG antes da integração: assinatura válida, dimensão 600×240, chunks
+  íntegros, canal alpha presente, fundo transparente confirmado por decodificação completa dos
+  pixels (não apenas leitura de metadados).
+- Busca confirmou zero referências restantes a `logo-placeholder.svg` em HTML/CSS/JS após a
+  substituição, e exatamente 18 referências (3 por página × 6 páginas) ao novo PNG.
+- Local: as seis páginas testadas em 375/430/768/1024/1440px — logomarca visível, sem
+  distorção, sem corte de folhas/letras, sem overflow horizontal, sem sobreposição com o menu;
+  menu móvel abrindo/fechando normalmente; console sem erros; zero recursos com falha
+  (incluindo o antigo placeholder, que corretamente retorna 404 após a remoção).
+- Tamanhos finais confirmados por inspeção visual: 140×56px (≤768px), 150×60px (~1024px),
+  170×68px (~1440px) — todos legíveis, símbolo de três folhas identificável, sem exceder o
+  espaço do cabeçalho de forma perceptível.
+
+### Regressão
+
+Nenhum conteúdo editorial, nome, e-mail, WhatsApp, mensagem automática, paleta, fonte, seção ou
+página foi alterado. Divisórias do menu, sublinhado no hover, item ativo e botão de WhatsApp
+confirmados intactos.
+
+### Próxima ação recomendada
+
+Revisão visual da nova logomarca pelos gestores do projeto e pela Dra. Deyvla. Nenhuma fase
+posterior foi iniciada.
+
+---
 
 ## Publicação no GitHub Pages (12/09/2026)
 
@@ -56,10 +121,11 @@
 
 ### Pendências
 
-Nenhuma pendência de publicação. Dados oficiais ainda não fornecidos (logomarca definitiva,
-fotografias, CRM, RQE, especialidades, biografia, redes sociais, etc.) continuam reservados
-para a fase final, conforme já registrado em `docs/CONTENT_REQUIREMENTS.md` e
-`docs/GLOBAL_VISUAL_REFINEMENT.md`.
+Nenhuma pendência de publicação. Dados oficiais ainda não fornecidos (fotografias, CRM, RQE,
+especialidades, biografia, redes sociais, etc.) continuam reservados para a fase final,
+conforme já registrado em `docs/CONTENT_REQUIREMENTS.md` e `docs/GLOBAL_VISUAL_REFINEMENT.md`.
+A logomarca oficial já foi integrada em 12/09/2026 (ver seção "Substituição da Logomarca
+Oficial" abaixo).
 
 ### Próxima ação recomendada
 
@@ -185,8 +251,9 @@ alterados — já estavam corretos.
 ### Pendências
 
 As mesmas já registradas em `docs/GLOBAL_VISUAL_REFINEMENT.md` e `docs/CONTENT_REQUIREMENTS.md`
-(logomarca oficial, fotografias, CRM, RQE, especialidades, biografia, formação, localização,
-horários, preços, redes sociais oficiais, políticas jurídicas).
+(fotografias, CRM, RQE, especialidades, biografia, formação, localização, horários, preços,
+redes sociais oficiais, políticas jurídicas). A logomarca oficial já foi integrada em
+12/09/2026.
 
 ### Próxima ação recomendada
 
@@ -246,9 +313,10 @@ Ver `docs/GLOBAL_VISUAL_REFINEMENT.md` para o registro completo. Resumo:
 
 ### Pendências
 
-Arquivo oficial da logomarca, fotografias profissionais, CRM, RQE, especialidades oficiais,
-biografia definitiva, formação, experiência, localização, horários, preços, detalhes exatos do
-atendimento, Instagram, Facebook, TikTok, YouTube e políticas jurídicas definitivas.
+Fotografias profissionais, CRM, RQE, especialidades oficiais, biografia definitiva, formação,
+experiência, localização, horários, preços, detalhes exatos do atendimento, Instagram,
+Facebook, TikTok, YouTube e políticas jurídicas definitivas. A logomarca oficial já foi
+integrada em 12/09/2026.
 
 ### Próxima ação recomendada
 

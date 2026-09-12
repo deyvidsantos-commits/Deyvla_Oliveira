@@ -199,3 +199,24 @@ o `.gitignore` foi ampliado. Nenhum design, texto editorial, funcionalidade ou f
 alterado ou iniciado nesta atividade. Ver `docs/PROJECT_STATE.md` (seção "Publicação no GitHub
 Pages") para o registro completo dos testes realizados antes e depois da publicação.
 
+## D-019 — Substituição da logomarca provisória pela logomarca oficial
+
+**Data:** 12/09/2026  
+**Estado:** aprovada
+
+A logomarca provisória (`assets/img/logo/logo-placeholder.svg`) foi substituída pela logomarca
+oficial da Dra. Deyvla Oliveira em todas as seis páginas (favicon, cabeçalho e rodapé). Novo
+arquivo: `assets/img/logo/logo-dra-deyvla-oliveira.png` — PNG, 600 × 240 px, proporção 5:2,
+fundo transparente (verificado tecnicamente por decodificação completa dos pixels, não apenas
+metadados), símbolo dourado de três folhas e texto "DRA. DEYVLA OLIVEIRA". Um primeiro envio do
+arquivo (2172 × 724 px, proporção 3:1) não correspondia à especificação; a atividade foi
+pausada e retomada somente após o recebimento do arquivo corrigido nas dimensões corretas.
+
+A classe `.logo-img` foi ajustada para exibir a imagem diretamente sobre o fundo verde,
+sem fundo, borda ou sombra, com dimensionamento fluido (`clamp()` no desktop, largura fixa no
+mobile) definido por inspeção visual. `--header-height` foi ajustada para acompanhar a nova
+altura real do cabeçalho. O placeholder anterior foi removido (`git rm`) somente após confirmar
+zero referências ativas restantes. Nenhum conteúdo editorial, nome, e-mail, WhatsApp ou paleta
+foi alterado. Ver `docs/PROJECT_STATE.md` (seção "Substituição da Logomarca Oficial") e
+`docs/GLOBAL_VISUAL_REFINEMENT.md` para o registro completo.
+

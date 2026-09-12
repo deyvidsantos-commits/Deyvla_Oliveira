@@ -34,7 +34,7 @@
   --radius: 14px;
   --transition: 200ms ease;
   --space-section: clamp(48px, 6vw, 88px);
-  --header-height: 92px;
+  --header-height: 100px;
 }
 
 /* ==========================================================================
@@ -233,8 +233,11 @@ summary:focus-visible,
 }
 
 .logo-img {
-  height: 60px;
-  width: auto;
+  display: block;
+  width: clamp(150px, 14vw, 170px);
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .nav-toggle {
@@ -1598,11 +1601,12 @@ summary:focus-visible,
 
 @media (max-width: 768px) {
   :root {
-    --header-height: 80px;
+    --header-height: 88px;
   }
 
   .logo-img {
-    height: 48px;
+    width: 140px;
+    height: auto;
   }
 
   .nav-toggle {

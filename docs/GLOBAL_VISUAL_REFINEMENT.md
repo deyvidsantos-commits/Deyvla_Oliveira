@@ -293,6 +293,36 @@ sem transição ainda constitui um deslocamento visual instantâneo.
   desde a Fase 1), portanto o comportamento real por teclado é considerado coberto por essa
   validação anterior.
 
+## Substituição da Logomarca Oficial (12/09/2026)
+
+A logomarca provisória (`assets/img/logo/logo-placeholder.svg`) foi substituída pela logomarca
+oficial em todas as seis páginas — favicon, cabeçalho e rodapé.
+
+### Arquivo
+
+`assets/img/logo/logo-dra-deyvla-oliveira.png` — PNG, 600 × 240 px (proporção 5:2), fundo
+transparente. Verificação técnica completa antes da integração: assinatura PNG válida,
+estrutura de chunks íntegra (sem corrupção), canal alpha presente, decodificação completa dos
+pixels confirmando os 4 cantos totalmente transparentes e o conteúdo (símbolo dourado de três
+folhas + texto "DRA. DEYVLA OLIVEIRA") opaco no centro. Um primeiro envio do arquivo (2172 × 724
+px, proporção 3:1) não correspondia à especificação (5:2); a substituição foi pausada até o
+recebimento do arquivo corrigido, sem qualquer alteração nos HTMLs nesse meio-tempo.
+
+### Aplicação visual
+
+`<img>` do cabeçalho e do rodapé com `alt="Dra. Deyvla Oliveira"`, `width="600"`,
+`height="240"` (agora exatos) e `decoding="async"`; `loading="lazy"` preservado apenas no
+rodapé. `<link rel="icon">` atualizado para o novo PNG. A classe `.logo-img` passou a usar
+`width: clamp(150px, 14vw, 170px); height: auto; object-fit: contain;` no desktop (sem fundo,
+borda ou sombra — a transparência do PNG fica visível sobre o verde do cabeçalho) e
+`width: 140px;` no mobile (≤768px). `--header-height` ajustada de 92px/80px para 100px/88px
+(desktop/mobile) para acompanhar a nova altura real do cabeçalho.
+
+### Remoção do placeholder
+
+`assets/img/logo/logo-placeholder.svg` removido (`git rm`) somente após confirmar, por busca no
+projeto, zero referências ativas restantes nas seis páginas, CSS e JavaScript.
+
 ## Limitações
 
 Mesma limitação já registrada nas fases anteriores — a ferramenta de redimensionamento de
@@ -303,7 +333,7 @@ necessário.
 
 ## Pendências
 
-Continuam reservados para a fase final, sem invenção: arquivo oficial da logomarca,
-fotografias profissionais, CRM, RQE, especialidades oficiais, biografia definitiva, formação,
-experiência, localização, horários, preços, detalhes exatos do atendimento, Instagram,
-Facebook, TikTok, YouTube e políticas jurídicas definitivas.
+Continuam reservados para a fase final, sem invenção: fotografias profissionais, CRM, RQE,
+especialidades oficiais, biografia definitiva, formação, experiência, localização, horários,
+preços, detalhes exatos do atendimento, Instagram, Facebook, TikTok, YouTube e políticas
+jurídicas definitivas. A logomarca oficial já foi integrada em 12/09/2026 (ver seção acima).
