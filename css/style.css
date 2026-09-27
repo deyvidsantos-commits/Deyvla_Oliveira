@@ -34,7 +34,7 @@
   --radius: 14px;
   --transition: 200ms ease;
   --space-section: clamp(48px, 6vw, 88px);
-  --header-height: 100px;
+  --header-height: clamp(61px, calc(21px + 4vw), 79px);
 }
 
 /* ==========================================================================
@@ -226,17 +226,33 @@ summary:focus-visible,
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  gap: 16px;
+  padding-block: 10px;
+  gap: 8px;
   position: relative;
 }
 
-.logo-img {
+/* O PNG oficial (720×240) tem grande margem transparente interna — o
+   conteúdo visível (flor + texto) ocupa apenas ~610×57px dentro do
+   canvas. .logo recorta essa margem: mantém a proporção do arquivo via
+   aspect-ratio e usa overflow:hidden; .logo-img é posicionada em
+   porcentagem (recalculada automaticamente com o tamanho do container)
+   para centralizar exatamente a área de conteúdo dentro da janela visível. */
+.logo {
   display: block;
-  width: clamp(150px, 14vw, 170px);
-  height: auto;
-  max-width: 100%;
+  width: clamp(200px, 20vw, 290px);
+  aspect-ratio: 5 / 1;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.logo-img {
+  position: absolute;
+  max-width: none;
+  width: 113.8%;
+  height: 189.6%;
+  left: -11.1%;
+  top: -46.4%;
   object-fit: contain;
 }
 
@@ -1601,12 +1617,11 @@ summary:focus-visible,
 
 @media (max-width: 768px) {
   :root {
-    --header-height: 88px;
+    --header-height: 65px;
   }
 
-  .logo-img {
-    width: 140px;
-    height: auto;
+  .logo {
+    width: 170px;
   }
 
   .nav-toggle {
