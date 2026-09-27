@@ -1,5 +1,17 @@
 # Requisitos de Conteúdo
 
+## Atualização — qualificações informadas em 26/09/2026
+
+Lista fornecida por Deyvid a pedido da Dra.: Epigenética; Pós-graduação em Medicina Tradicional Chinesa; Acupuntura estética; Alta performance; Fitoterapia chinesa e brasileira; Fitoterapia Quântica; Biomagnetismo médico; Ozonioterapia médica; Suplementação injetável; Educadora física/Pilates.
+
+O rascunho local em `pages/sobre.html#formacao-experiencia` organiza todos os itens com campos entre colchetes. A declaração dos temas não confirma o tipo de diploma, instituição, conclusão, registro ou oferta de procedimentos.
+
+Preencher: nome exato e tipo de cada formação, instituição, ano, situação de conclusão, CRM/UF, RQE quando houver, graduação/habilitação e CREF/UF de Educação Física. Confirmar experiência e serviços oferecidos, modalidades e local presencial se aplicável.
+
+Antes da publicação, revisar a identificação exigida para pós-graduação e as condições de divulgação dos procedimentos. Fitoterapia Quântica e Biomagnetismo médico dependem de esclarecimento da prática, fundamentação científica e enquadramento profissional. Ozonioterapia e suplementação injetável exigem especificação das indicações e da estrutura de atendimento. Não atribuir benefícios clínicos genéricos nem tratar a relação como especialidades médicas registradas.
+
+Deyvid autorizou em 26/09/2026 a publicação deste rascunho com os campos pendentes visíveis, após receber a prévia. O conteúdo definitivo e os enquadramentos acima continuam sujeitos à revisão da Dra. As seções datadas anteriores abaixo são histórico.
+
 ## 1. Princípios
 
 - Linguagem clara, acolhedora e profissional.
@@ -112,4 +124,3 @@ Registrados durante a revisão visual global (ver `docs/GLOBAL_VISUAL_REFINEMENT
 
 Nenhum outro dado (registros, formações, biografia, fotografias, redes sociais, país/região de
 atendimento) foi fornecido ou inventado nesta atividade.
-

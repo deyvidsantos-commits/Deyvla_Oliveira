@@ -1,7 +1,25 @@
 # Project State — Site Dra. Deyv
 
-**Atualizado em:** 12/09/2026  
-**Fase atual:** Substituição da Logomarca Oficial (transversal às 6 páginas; não é uma nova fase editorial)  
+**Atualizado em:** 26/09/2026
+
+**Fase atual:** Rascunho de formação e qualificações, com campos pendentes para revisão da Dra. Deyvla.
+
+**Estado desta entrega:** publicação do rascunho autorizada por Deyvid em 26/09/2026, incluindo os campos pendentes visíveis. O preenchimento e a validação final continuam pendentes. Os estados das fases anteriores abaixo constituem histórico.
+
+## Formação e qualificações — rascunho (26/09/2026)
+
+- Deyvid autorizou organizar os itens informados pela Dra. com dados desconhecidos visíveis entre colchetes.
+- `pages/sobre.html`: trajetória atualizada; seção existente preenchida com formação acadêmica, formação complementar/temas de estudo e informações em validação.
+- Todos os dez itens recebidos estão contemplados. Educação Física e Pilates foram separados; Medicina permanece como formação base com dados pendentes.
+- Não foram inventados instituição, ano, diploma, registro, conclusão, experiência, eficácia ou oferta de serviços.
+- Fitoterapia Quântica, Biomagnetismo médico, Ozonioterapia médica e Suplementação injetável estão em validação com pendências específicas. A lista não constitui especialidades registradas ou oferta de procedimentos.
+- `index.html`: link para a seção detalhada. `css/style.css`: ajustes restritos aos cartões de formação e campos pendentes.
+- Próximo passo: preencher os dados com a Dra. e validar a redação e o enquadramento profissional para a versão definitiva. Deyvid autorizou publicar o rascunho com as pendências visíveis após a prévia.
+- Verificação estática: itens recebidos e campos pendentes presentes; recursos, links relativos, âncoras, IDs e um h1 por página conferidos em Home e Sobre; `git diff --check` sem problemas.
+- Verificação visual pendente: o navegador do Playwright não está instalado neste ambiente. Não foi possível confirmar renderização desktop/mobile ou erros de console nesta entrega.
+
+---
+
 **Estado geral:** Fase 1 — aprovada internamente. Fase 2 — aprovada internamente. Fase 3 — aprovada internamente. Fase 4 — aprovada internamente. Fase 5 — aprovada internamente. Fase 6 — implementada e aguardando revisão interna. Revisão visual global — implementada e aguardando revisão interna. Correção nominal global — implementada e aguardando revisão interna. Melhoria visual pontual do menu global — implementada e aguardando revisão interna. Publicação no GitHub Pages — publicada e verificada. Substituição da logomarca oficial — implementada e aguardando revisão visual.
 
 ## Substituição da Logomarca Oficial (12/09/2026)
@@ -1080,4 +1098,3 @@ Dra_Deyv/
 ## Próxima ação
 
 Enviar ao Claude um prompt restrito à Fase 1, utilizando conteúdo provisório claramente identificado e sem inventar credenciais, números, formações ou especialidades.
-

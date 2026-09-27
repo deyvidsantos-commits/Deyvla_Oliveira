@@ -775,6 +775,39 @@ summary:focus-visible,
   min-height: 4px;
 }
 
+.formation-category {
+  min-width: 0;
+}
+
+.formation-list li {
+  padding: 16px 0;
+  overflow-wrap: anywhere;
+}
+
+.formation-list li + li {
+  border-top: 1px solid var(--color-border);
+}
+
+.formation-list strong,
+.qualification-pending {
+  display: block;
+}
+
+.qualification-pending {
+  margin-top: 8px;
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--color-primary);
+}
+
+.qualification-review-note {
+  margin-top: 24px;
+  padding: 18px 22px;
+  border-left: 3px solid var(--color-gold);
+  background: var(--color-ivory);
+  overflow-wrap: anywhere;
+}
+
 /* ==========================================================================
    Situações (Para quem é o acompanhamento)
    ========================================================================== */

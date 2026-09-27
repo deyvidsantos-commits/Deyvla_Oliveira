@@ -1,5 +1,16 @@
 # Registo de Decisões
 
+## D-020 — Rascunho de formação e qualificações
+
+**Data:** 26/09/2026
+**Estado:** implementação autorizada; conteúdo final pendente de revisão.
+
+Deyvid autorizou preencher a seção da página Sobre com os itens enviados pela Dra. e marcadores visíveis como `[falta instituição]` e `[falta ano]`. Codex executa esta alteração diretamente, conforme autorização nesta conversa.
+
+Organização: formação acadêmica; formação complementar e temas de estudo; informações em validação. Educação Física e Pilates aparecem separadamente. Nenhuma afirmação de especialidade registrada, eficácia ou oferta de procedimentos foi acrescentada. Os itens que precisam de esclarecimento científico ou profissional permanecem explicitamente em validação.
+
+A Home recebeu um link para a seção detalhada. Preservados menu, logomarca, contatos e demais páginas. Após receber a prévia, Deyvid autorizou explicitamente o commit e a publicação no repositório `deyvidsantos-commits/Deyvla_Oliveira`, incluindo os campos pendentes visíveis. A validação final das qualificações continua pendente.
+
 ## D-001 — Site institucional estático
 
 **Data:** 11/09/2026  
@@ -219,4 +230,3 @@ altura real do cabeçalho. O placeholder anterior foi removido (`git rm`) soment
 zero referências ativas restantes. Nenhum conteúdo editorial, nome, e-mail, WhatsApp ou paleta
 foi alterado. Ver `docs/PROJECT_STATE.md` (seção "Substituição da Logomarca Oficial") e
 `docs/GLOBAL_VISUAL_REFINEMENT.md` para o registro completo.
-
