@@ -661,6 +661,15 @@ summary:focus-visible,
   object-position: 50% 35%;
 }
 
+/* Conteúdos — retrato com óculos: rosto, óculos, mão e blazer visíveis */
+.photo-conteudos-hero {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 8%;
+}
+
 .photo-contato-estetoscopio {
   object-position: 50% 20%;
 }

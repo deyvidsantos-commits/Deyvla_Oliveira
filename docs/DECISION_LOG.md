@@ -1,5 +1,12 @@
 # Registo de Decisões
 
+## D-026 — Português do Brasil e nova fotografia de Conteúdos
+
+**Data:** 09/10/2026
+**Estado:** aprovada por Deyvid em 09/10/2026; commit e publicação autorizados.
+
+Como a Dra. Deyvla atua no Brasil, o conteúdo público do site deve usar português do Brasil. Nesta atividade, "contacto" passou a "contato" em todo o texto público. O hero de Conteúdos passou a usar `dra-deyvla-conteudos-hero-oculos.jpeg`, com enquadramento próprio. A foto anterior continua no projeto até uma limpeza futura.
+
 ## D-025 — Aprovação visual e publicação
 
 **Data:** 09/10/2026

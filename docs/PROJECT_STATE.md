@@ -2,9 +2,17 @@
 
 **Atualizado em:** 09/10/2026
 
-**Fase atual:** Imagens definitivas do site e formação e qualificações da Dra. Deyvla.
+**Fase atual:** Correção pontual: nova fotografia de Conteúdos e padronização de "Contato" (português do Brasil).
 
-**Estado desta entrega:** avaliação visual **aprovada** por Deyvid em 09/10/2026. Commit e publicação autorizados no GitHub Pages (commit "feat: finalize website imagery and professional qualifications"). Os registros de 09/10/2026 abaixo que dizem "aguardando avaliação visual" e as fases anteriores constituem histórico.
+**Estado desta entrega:** avaliação visual **aprovada** por Deyvid em 09/10/2026. Commit e publicação autorizados (commit "fix: update content portrait and Brazilian Portuguese"). A entrega anterior (commit `09c578e`, publicada em 09/10/2026) está registrada abaixo como histórico.
+
+## Nova fotografia de Conteúdos e "Contato" em português do Brasil (09/10/2026)
+
+- `pages/conteudos.html`, hero: `dra-deyvla-conteudos-editorial.jpeg` foi substituída por `assets/img/galeria/dra-deyvla-conteudos-hero-oculos.jpeg` (969 × 1600), com o alt "Dra. Deyvla Oliveira em retrato profissional com óculos", `loading="eager"`, `decoding="async"` e `fetchpriority="high"`. A fotografia anterior foi mantida no projeto, sem referência.
+- CSS: `.photo-conteudos-hero` (cover, `object-position: 50% 8%`) só para essa foto. O valor sugerido de 28% cortava o topo da cabeça; com 8%, cabelo, rosto, óculos, mão e blazer ficam visíveis. A moldura 3/4 existente foi mantida.
+- "contacto" foi substituído por "contato" em 6 ocorrências de texto visível: `acompanhamento.html` (3), `conteudos.html` (1), `evolift.html` (1) e `sobre.html` (1). Nenhum identificador, caminho, link ou mensagem do WhatsApp continha a palavra. A busca final no HTML, CSS e JS retorna zero. Os registros históricos em `docs/` não foram alterados.
+- Ainda há outras grafias de português europeu no site, não alteradas nesta atividade: "telemóvel" (`evolift.html`, `contato.html`) e "Planeamento" (`acompanhamento.html`).
+- Testes em 375/768/1024/1440px: seis páginas sem overflow e sem erros de console, menu móvel funcionando e 44 URLs internas sem erro. O texto e os links são idênticos ao commit anterior, exceto pela troca de contacto por contato.
 
 ## Correções editoriais finais (09/10/2026)
 
