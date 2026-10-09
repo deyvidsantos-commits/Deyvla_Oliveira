@@ -1,10 +1,104 @@
 # Project State — Site Dra. Deyv
 
-**Atualizado em:** 26/09/2026
+**Atualizado em:** 09/10/2026
 
-**Fase atual:** Rascunho de formação e qualificações, com campos pendentes para revisão da Dra. Deyvla.
+**Fase atual:** Imagens definitivas do site e formação e qualificações da Dra. Deyvla.
 
-**Estado desta entrega:** publicação do rascunho autorizada por Deyvid em 26/09/2026, incluindo os campos pendentes visíveis. O preenchimento e a validação final continuam pendentes. Os estados das fases anteriores abaixo constituem histórico.
+**Estado desta entrega:** avaliação visual **aprovada** por Deyvid em 09/10/2026. Commit e publicação autorizados no GitHub Pages (commit "feat: finalize website imagery and professional qualifications"). Os registros de 09/10/2026 abaixo que dizem "aguardando avaliação visual" e as fases anteriores constituem histórico.
+
+## Correções editoriais finais (09/10/2026)
+
+- Fitoterapia Quântica voltou a ser exibida em "Temas de estudo", sem ano, instituição ou observação.
+- Parágrafo da Trajetória reescrito de forma definitiva: "Sua formação e os temas de estudo estão apresentados a seguir."
+- Removido o comentário TODO sobre o CRM. O CRM continua sem exibição até ser fornecido.
+- Validação final: buscas por marcadores provisórios e nomes incorretos sem ocorrências no site; 34 referências locais existentes e versionadas; seis páginas sem overflow, sem erros de console e com o menu móvel funcionando em 375/768/1024/1440px.
+
+## Formação e qualificações — reformulação (09/10/2026)
+
+- `pages/sobre.html`, seção `#formacao-experiencia` (âncora preservada): reorganizada com o conteúdo profissional fornecido pela Dra. Deyvla em cinco blocos:
+  1. Apresentação.
+  2. Destaques de experiência (+14 anos em MTC, +28 mil atendimentos, +14 anos como mentora e +13 anos como professora de MTC).
+  3. Formação principal (Medicina, Pós-graduação em MTC, Mestrado em Gerontologia, Atividade Física e Saúde — 2013, Educação Física — 2007), ao lado da fotografia da Formação, que não foi alterada.
+  4. Linha do tempo de 2007 a 2026.
+  5. Formação complementar e atualização profissional.
+- Todos os 49 marcadores visíveis `[falta …]` foram removidos, assim como o aviso "Conteúdo em revisão" e o bloco "Serviços e experiência profissional", que só continha marcadores.
+- Duplicações consolidadas, sem perder informação:
+  - Educação Física, Pilates, Acupuntura estética, Biomagnetismo médico, Ozonioterapia e Suplementação injetável passaram a ser os itens datados da linha do tempo (Terapias Injetáveis, 2026).
+  - Epigenética, Alta performance e Fitoterapia chinesa e brasileira foram mantidas como "Temas de estudo".
+  - Fitoterapia Quântica (antes "em validação", sem dado novo) ficou registrada em comentário HTML, sem exibição, até confirmação.
+- CRM: não exibido enquanto o número oficial não for fornecido (comentário TODO no código). Nenhuma instituição, título, ano, CRM ou RQE foi inventado, e a palavra "especialista" não é usada.
+- Mantido o aviso factual: "As formações e os cursos apresentados não constituem especialidades médicas registradas nem confirmam a oferta de procedimentos."
+- CSS: novo bloco escopado em `.section-formation`. As classes `formation-timeline*` não conflitam com a `.timeline` da página EvoLift. Números e anos usam o dourado profundo `#8A6A26` (contraste AA); linhas e marcadores usam o dourado do site.
+- Pendência fora do escopo, não alterada: o parágrafo da Trajetória (`pages/sobre.html`) ainda menciona "detalhes ainda necessários sinalizados para revisão".
+- Testes em 375/768/1024/1440px: sem overflow, sem sobreposição na linha do tempo, pontos centrados na linha, números sem quebra, menu móvel funcionando, console sem erros, 44 URLs internas sem erro. As buscas por `[falta`, `CRMXXXX`, `a definir`, `instituição]`, `ano]`, `Deyvli`, `Deyvila` e "Dra. Deyv" isolado retornaram zero. Aguardando avaliação visual; sem commit.
+
+## Atendimento online — última imagem provisória do Acompanhamento (09/10/2026)
+
+- `pages/acompanhamento.html`, seção "Acompanhamento online, com proximidade e organização.": `online-placeholder.svg` foi substituído por `assets/img/acompanhamento/dra-deyvla-atendimento-online.jpeg` (1536 × 1024, mesma proporção 3/2 do contêiner). O comentário TODO correspondente foi removido.
+- CSS: `.photo-acompanhamento-online` (cover, `object-position: 40% 35%`) restrita a essa foto. Com isso, a página Acompanhamento não tem mais nenhum placeholder.
+- Testes em 375/768/1024/1440px: sem overflow, sem erros de console, imagem com HTTP 200, rosto, mãos e notebook visíveis, menu móvel funcionando e texto e links idênticos. Aguardando avaliação visual; sem commit.
+- O que ficou escrito na seção abaixo sobre `online-placeholder.svg` estar pendente deixou de valer.
+
+## Imagens temáticas e composições do EvoLift (09/10/2026)
+
+16 imagens novas substituíram os placeholders SVG correspondentes, cada `<img>` alterado individualmente (sem substituição global por nome de arquivo).
+
+| Página | Seção | Imagem | Dimensões | Ajuste |
+|---|---|---|---|---|
+| Início | Atendimento online | `hero/atendimento-online-home.png` | 1536 × 1024 | cover (contêiner 4/3) |
+| Início | EvoLift | `evolift/evolift-apresentacao-home.png` | 1200 × 900 | contain |
+| Acompanhamento | Jornada | `acompanhamento/jornada-acompanhamento.png` | 1536 × 1024 | cover |
+| Acompanhamento | EvoLift como apoio | `acompanhamento/evolift-acompanhamento.png` | 1200 × 900 | contain |
+| EvoLift | Hero | `evolift/evolift-page-hero.png` | 1400 × 1000 | contain, eager |
+| EvoLift | Telemóvel | `evolift/evolift-mobile-home.jpeg` | 610 × 1356 | contain na moldura existente |
+| EvoLift | Recursos | `evolift/evolift-features.png` | 1400 × 900 | contain, até 1040px |
+| EvoLift | Evolução | `evolift/evolift-progress.png` | 1400 × 900 | contain |
+| Conteúdos | Destaque | `conteudos/destaque-longevidade.png` | 1564 × 1006 | cover |
+| Conteúdos | Movimento / Hábitos / Alimentação / Bem-estar / Acompanhamento / Prevenção | `conteudos/conteudo-*.png` | 1536 × 1024 | cover |
+| Contato | Atendimento online | `contato/atendimento-online-contato.png` | 1536 × 1024 | cover |
+
+- As composições do EvoLift são capturas reais do aplicativo, originadas do repositório **Evolift-Home**, sem alteração do conteúdo das telas.
+- `.evolift-composition` aplica `object-fit: contain` só nas composições (`.section-photo` continua `cover`). As molduras existentes já tinham a mesma proporção de cada arquivo (4/3, 7/5, 14/9; a área interna da moldura do telemóvel é cerca de 0,449, contra 0,450 da captura), então nenhuma tela é cortada e não aparecem faixas vazias.
+- `.media-evolift-features` amplia somente o contêiner das quatro telas (de 720px para 1040px) para melhorar a leitura.
+- Pendente: `acompanhamento/online-placeholder.svg` foi mantido de propósito, com o comentário `TODO: substituir por fotografia horizontal da Dra. Deyvla durante atendimento online.` A fotografia ainda não existe.
+- Os seis comentários "TODO final: substituir por imagem definitiva" dos cartões de Conteúdos foram removidos, porque as imagens definitivas já estão no lugar. Os SVGs antigos não foram apagados.
+- `MAPEAMENTO-IMAGENS.md` e `MAPEAMENTO-EVOLIFT.md` não existiam. O mapeamento seguiu o pedido de Deyvid.
+- Arquivos alterados nesta atividade: `index.html`, `pages/acompanhamento.html`, `pages/evolift.html`, `pages/conteudos.html`, `pages/contato.html`, `css/style.css` e esta documentação.
+- Testes (Chrome headless sob `/Deyvla_Oliveira/`, seis páginas em 375/768/1024/1440px): sem overflow, sem erros de console, sem 404 (44 URLs internas), menu móvel funcionando, texto e links idênticos ao commit anterior e fotografias da Dra. com as mesmas medidas da atividade anterior.
+- Recomendação: as imagens temáticas são PNG de 1,8 a 2,9 MB cada (Conteúdos soma cerca de 17 MB). Convém convertê-las para JPEG/WebP antes da publicação, com autorização.
+
+## Fotografias profissionais — substituição dos placeholders (09/10/2026)
+
+Oito fotografias definitivas, em `assets/img/galeria/` (JPEG, todas verticais), substituíram os placeholders de retrato. As imagens temáticas (EvoLift, conteúdos, atendimento online, jornada) não foram alteradas.
+
+| Fotografia | Dimensões | Página / seção | Moldura | `object-position` |
+|---|---|---|---|---|
+| `dra-deyvla-home-apresentacao.jpeg` | 1024 × 1536 | Início — hero | 3/4 (existente) | 50% 30% |
+| `dra-deyvla-home-sobre.jpeg` | 1024 × 1536 | Início — "Dra. Deyvla" | 9/11 (existente) | 50% 30% |
+| `dra-deyvla-sobre-hero.jpeg` | 972 × 1291 | Dra. Deyvla — hero | 3/4 | 50% 30% |
+| `dra-deyvla-sobre-trajetoria.jpeg` | 880 × 1215 | Dra. Deyvla — Trajetória | 4/5 | 50% 40% |
+| `dra-deyvla-sobre-formacao.jpeg` | 880 × 1197 | Dra. Deyvla — Formação e qualificações | 4/5 | 50% 10% |
+| `dra-deyvla-acompanhamento-profissional.jpeg` | 747 × 1321 | Acompanhamento — hero | 2/3 | 50% 30% |
+| `dra-deyvla-conteudos-editorial.jpeg` | 808 × 1458 | Conteúdos — hero | 3/4 | 50% 35% |
+| `dra-deyvla-contato-estetoscopio.jpeg` | 610 × 1356 | Contato — hero | 3/5 | 50% 20% |
+
+### Ajustes responsivos
+
+- Heroes de **Dra. Deyvla** e **Conteúdos**: o banner horizontal (16/7 e 2/1) virou duas colunas (`section-media-grid`, mesmo padrão já usado em Acompanhamento e Contato). No celular: texto primeiro, foto abaixo.
+- **Trajetória**, **Acompanhamento** e **Contato**: a moldura horizontal (4/3 e 7/5) passou a ser vertical (`section-media-portrait` + `section-media-3-4`/`-2-3`/`-3-5`), com largura máxima de 380–440px no desktop e 360–400px abaixo de 900px.
+- **Formação e qualificações**: a introdução (título, parágrafo e aviso "Conteúdo em revisão") ganhou duas colunas com a foto (`.formation-intro`, foto até 340px). A grade das qualificações continua em largura total abaixo. Abaixo de 900px, a foto fica entre o aviso e a lista. Textos e os 49 marcadores `[falta …]` estão preservados.
+- CSS apenas acrescentado (nenhuma regra existente alterada ou removida). `alt` reais; `width`/`height` com as dimensões nativas; `loading="eager"` nos heroes e `lazy` abaixo da dobra; `decoding="async"`.
+- Os placeholders SVG substituídos deixaram de ser referenciados, mas os arquivos foram mantidos para remoção posterior.
+- O arquivo `assets/img/galeria/MAPEAMENTO-FOTOS.md`, citado no pedido, não existia. O mapeamento seguiu o pedido de Deyvid.
+- Três JPEGs (sobre-hero, acompanhamento, conteúdos) têm 20 bytes de metadados após o marcador final (exportação do WhatsApp). Isso é inofensivo; eles decodificam normalmente.
+
+### Arquivos alterados
+
+`index.html`, `pages/sobre.html`, `pages/acompanhamento.html`, `pages/conteudos.html`, `pages/contato.html`, `css/style.css`, `docs/PROJECT_STATE.md`, `docs/DECISION_LOG.md`, além das fotografias novas em `assets/img/galeria/`.
+
+### Testes
+
+Chrome headless sob `/Deyvla_Oliveira/`, com as seis páginas em 375/768/1024/1440px: sem overflow horizontal, sem erros de console, sem recursos 404 (41 URLs internas verificadas), um `h1` por página, nenhuma foto exibida acima da resolução nativa, menu móvel abrindo e fechando e logomarca inalterada. O texto visível e os links de todas as páginas são idênticos ao commit anterior.
 
 ## Formação e qualificações — rascunho (26/09/2026)
 

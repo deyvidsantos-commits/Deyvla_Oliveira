@@ -1,5 +1,40 @@
 # Registo de Decisões
 
+## D-025 — Aprovação visual e publicação
+
+**Data:** 09/10/2026
+**Estado:** aprovada
+
+Deyvid aprovou a avaliação visual das atividades de 09/10/2026 (D-021 a D-024) e autorizou o commit e a publicação. Por decisão dele, a Fitoterapia Quântica volta a ser exibida em "Temas de estudo", revendo o tratamento de D-024. A frase da Trajetória sobre detalhes em revisão foi substituída por redação definitiva, e o comentário TODO sobre o CRM foi removido. O CRM continua sem exibição até ser fornecido.
+
+## D-024 — Reformulação da formação e qualificações; CRM não exibido
+
+**Data:** 09/10/2026
+**Estado:** implementada localmente; aguardando avaliação visual de Deyvid. Sem commit e sem publicação.
+
+A seção de formação da página Sobre foi reorganizada com o conteúdo profissional fornecido pela Dra. Deyvla (destaques de experiência, formação principal, linha do tempo e formação complementar), e os marcadores visíveis do rascunho D-020 foram removidos. O CRM não será exibido, nem com texto provisório, até que o número oficial seja fornecido. Nenhuma instituição, título, ano ou registro foi inventado. As informações publicadas anteriormente foram consolidadas, sem exclusão. Fitoterapia Quântica, ainda em validação, permanece apenas em comentário no código até confirmação.
+
+## D-023 — Fotografia de atendimento online no Acompanhamento
+
+**Data:** 09/10/2026
+**Estado:** implementada localmente; aguardando avaliação visual de Deyvid. Sem commit e sem publicação.
+
+A fotografia `dra-deyvla-atendimento-online.jpeg` substitui o último placeholder da página Acompanhamento, encerrando a pendência registrada em D-022. O SVG antigo foi mantido para remoção posterior.
+
+## D-022 — Imagens temáticas e composições reais do EvoLift
+
+**Data:** 09/10/2026
+**Estado:** implementada localmente; aguardando avaliação visual de Deyvid. Sem commit e sem publicação.
+
+As imagens temáticas (atendimento online, jornada, Destaque e seis cartões de Conteúdos) e as composições reais do EvoLift (capturas do repositório Evolift-Home) substituem os placeholders SVG. As composições usam `object-fit: contain` e as imagens temáticas usam `cover`. Nenhuma tela do aplicativo foi cortada ou editada. O espaço do atendimento online na página Acompanhamento continua com o placeholder até existir a fotografia horizontal da Dra. Deyvla em atendimento online. Os SVGs antigos foram mantidos para remoção posterior.
+
+## D-021 — Fotografias profissionais e molduras verticais
+
+**Data:** 09/10/2026
+**Estado:** implementada localmente; aguardando avaliação visual de Deyvid.
+
+As oito fotografias profissionais de `assets/img/galeria/` substituem os placeholders de retrato, conforme o mapeamento definido por Deyvid. Como as fotos são verticais, nenhuma foi forçada em banner horizontal: os heroes de Sobre e Conteúdos passaram a ter duas colunas, e Trajetória, Acompanhamento e Contato receberam molduras verticais com `object-position` individual. A seção Formação ganhou a foto ao lado da introdução, sem estreitar a grade das qualificações. As imagens temáticas e a pasta de reserva não foram usadas. Os SVGs substituídos foram mantidos para remoção posterior.
+
 ## D-020 — Rascunho de formação e qualificações
 
 **Data:** 26/09/2026
