@@ -1,10 +1,38 @@
 # Project State — Site Dra. Deyv
 
-**Atualizado em:** 09/10/2026
+**Atualizado em:** 11/10/2026
 
-**Fase atual:** Correção pontual: nova fotografia de Conteúdos e padronização de "Contato" (português do Brasil).
+**Fase atual:** Nova página Métodos (Método Deyv Destrava™ e Método Deyv Desinflama™).
 
-**Estado desta entrega:** avaliação visual **aprovada** por Deyvid em 09/10/2026. Commit e publicação autorizados (commit "fix: update content portrait and Brazilian Portuguese"). A entrega anterior (commit `09c578e`, publicada em 09/10/2026) está registrada abaixo como histórico.
+**Estado desta entrega:** avaliação visual **aprovada** por Deyvid em 11/10/2026. Commit e publicação autorizados (commit "feat: add Deyv methods page and update qualifications"). As entregas anteriores (até o commit `fea8878`, publicado em 09/10/2026) estão registradas abaixo como histórico.
+
+## Ajustes de conteúdo (11/10/2026)
+
+- Métodos: a etapa "A — Autonomia" aparece só com letra e nome, como as demais, sem descrição.
+- Sobre: a formação em dança foi corrigida para 1998 ("Formação em Dança", com "Balé, Dança do Ventre e Street Dance"). Ela é o primeiro item da linha do tempo e saiu de 2007, sem duplicação. Nenhuma instituição ou certificado foi acrescentado.
+
+## Página Métodos (11/10/2026)
+
+- Nova página `pages/metodos.html`, com cabeçalho, rodapé, CSS e JS compartilhados; `lang="pt-BR"`, título "Métodos | Dra. Deyvla Oliveira", meta description e canonical para a URL pública. As demais páginas não usam canonical nem Open Graph, e Open Graph não foi adicionado. O projeto não tem `sitemap.xml` nem `robots.txt`, e nenhum dos dois foi criado.
+- Estrutura da página:
+  1. Hero com links internos para `#deyv-destrava` e `#deyv-desinflama`.
+  2. Seção Deyv Destrava: apresentação, frase de destaque, "para quem é", objetivos, oito pilares (as letras de DESTRAVA) e chamada para o WhatsApp.
+  3. Seção Deyv Desinflama: apresentação, frase de destaque, quatro pilares, "para quem é" e chamada para o WhatsApp.
+  4. Comparação entre os métodos, com botão geral.
+  5. Aviso de responsabilidade.
+- Página Início: nova seção "Métodos autorais" (`#metodos-home`), entre "Atendimento online" e "EvoLift", com dois cartões e o botão "Conhecer os métodos".
+- Navegação: "Métodos" foi incluído depois de "Acompanhamento" no menu (desktop e móvel) e no rodapé das sete páginas, com `aria-current="page"` na página Métodos.
+- Menu: com oito itens, o menu horizontal só cabe em uma linha a partir de cerca de 1100px.
+  - As regras do menu móvel passaram do bloco `max-width: 768px` para um bloco novo `max-width: 1140px`, com conteúdo idêntico; logomarca, altura do cabeçalho e rodapé continuam no bloco de 768px.
+  - Isso também elimina a quebra do menu em duas linhas que já existia entre 769 e 990px.
+  - O espaço entre os links passou de 28 para 22px (divisória de −14 para −11px), para manter folga em relação à logomarca em 1440px.
+  - Fonte, logomarca e botão WhatsApp não mudaram.
+- WhatsApp: `js/main.js` aceita o atributo opcional `data-whatsapp-mensagem`. Os três botões da página Métodos usam mensagens específicas (Destrava, Desinflama e escolha do método), sempre com o mesmo número oficial, `target="_blank"` e `rel="noopener noreferrer"`. Os botões existentes continuam com a mensagem padrão.
+- Segurança editorial: textos fornecidos por Deyvid, sem promessa de cura, garantia, prazo, porcentagem, preço, duração, número de consultas, depoimento, certificação ou registro de marca. O símbolo ™ é usado nos nomes comerciais, sem ®. Os "para quem é" trazem a observação de avaliação individualizada, e o aviso de responsabilidade aparece com tamanho legível.
+- DESTRAVA: as oito letras foram confirmadas pela Dra. Deyvla (D Diagnosticar, E Equilibrar, S Simplificar, T Transformar hábitos, R Regular, A Ajustar, V Viver melhor, A Autonomia). Elas aparecem como "Pilares que orientam o método" em oito cartões com a letra em destaque (4 por linha no desktop, 2 no tablet, 1 no celular).
+- CSS: um bloco novo com prefixo `methods-`, mais elementos decorativos em SVG simples com `aria-hidden`. Nenhuma fotografia foi adicionada ou trocada.
+- Nenhuma informação médica, comercial ou acadêmica foi inventada.
+- Testes (Chrome headless sob `/Deyvla_Oliveira/`): 7 páginas × 5 larguras (375/768/1024/1280/1440) = 35 combinações sem overflow, sem erros de console e sem imagens quebradas. Também verificados: 48 URLs internas sem erro, menu móvel funcionando nas sete páginas (incluindo 1024px, com Esc), item ativo correto, âncoras abaixo do cabeçalho fixo e mensagens de WhatsApp corretas. O texto e os links das páginas existentes são idênticos ao commit anterior, exceto pelo item "Métodos" e pela nova seção da Início.
 
 ## Nova fotografia de Conteúdos e "Contato" em português do Brasil (09/10/2026)
 

@@ -1,5 +1,20 @@
 # Registo de Decisões
 
+## D-027 — Página Métodos e menu com oito itens
+
+**Data:** 11/10/2026
+**Estado:** aprovada por Deyvid em 11/10/2026; commit e publicação autorizados.
+
+Foi criada a página `pages/metodos.html`, que apresenta o Método Deyv Destrava™ e o Método Deyv Desinflama™ com os textos fornecidos, e uma seção resumida na Início. "Métodos" entra na navegação depois de "Acompanhamento". Para acomodar oito itens sem quebra ou sobreposição, o menu móvel passa a ser usado até 1140px e o espaço entre os links foi reduzido moderadamente.
+
+Decisões editoriais:
+- Sem promessas absolutas (cura, garantia, prazo ou resultado).
+- O ™ é mantido nos nomes, sem afirmar registro de marca.
+- Cada método tem um botão de WhatsApp com mensagem própria, no mesmo número oficial.
+- Os oito pilares do DESTRAVA são apresentados com as letras da palavra; a última letra A (Autonomia) foi confirmada pela Dra. Deyvla.
+
+Nenhuma informação médica, comercial ou acadêmica foi inventada.
+
 ## D-026 — Português do Brasil e nova fotografia de Conteúdos
 
 **Data:** 09/10/2026

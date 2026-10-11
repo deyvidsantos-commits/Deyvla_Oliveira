@@ -14,6 +14,7 @@ Dra_Deyv/
 ├── pages/
 │   ├── sobre.html
 │   ├── acompanhamento.html
+│   ├── metodos.html
 │   ├── evolift.html
 │   ├── conteudos.html
 │   └── contato.html
@@ -91,4 +92,6 @@ O número deve conter código do país e apenas dígitos. Enquanto não houver n
 Mensagem provisória:
 
 `Olá, Dra. Deyv! Conheci o seu trabalho através do site e gostaria de receber informações sobre a avaliação inicial.`
+
+Atualização (11/10/2026): o número oficial e a mensagem padrão ficam centralizados em `js/main.js`. Um botão pode definir uma mensagem própria com o atributo opcional `data-whatsapp-mensagem` (usado nos botões da página Métodos); sem o atributo, vale a mensagem padrão.
 

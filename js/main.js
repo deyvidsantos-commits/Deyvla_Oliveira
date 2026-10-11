@@ -19,12 +19,14 @@
     return /^\d{8,15}$/.test(numero);
   }
 
-  function montarLinkWhatsApp() {
+  /* Mensagem opcional por botão (atributo data-whatsapp-mensagem);
+     sem o atributo, usa a mensagem padrão acima. */
+  function montarLinkWhatsApp(mensagem) {
     return (
       "https://wa.me/" +
       WHATSAPP_CONFIG.numero +
       "?text=" +
-      encodeURIComponent(WHATSAPP_CONFIG.mensagem)
+      encodeURIComponent(mensagem || WHATSAPP_CONFIG.mensagem)
     );
   }
 
@@ -44,11 +46,13 @@
 
   function iniciarWhatsApp() {
     var configurado = numeroConfigurado(WHATSAPP_CONFIG.numero);
-    var link = montarLinkWhatsApp();
     var botoes = document.querySelectorAll("[data-whatsapp]");
 
     botoes.forEach(function (botao) {
-      botao.setAttribute("href", link);
+      botao.setAttribute(
+        "href",
+        montarLinkWhatsApp(botao.getAttribute("data-whatsapp-mensagem"))
+      );
       botao.setAttribute("target", "_blank");
       botao.setAttribute("rel", "noopener noreferrer");
 

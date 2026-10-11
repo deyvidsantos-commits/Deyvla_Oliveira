@@ -11,6 +11,7 @@ Site institucional da Dra. Deyvla Oliveira, dedicado à apresentação de sua pr
 - Início
 - Dra. Deyvla
 - Acompanhamento
+- Métodos (Deyv Destrava™ e Deyv Desinflama™)
 - EvoLift
 - Conteúdos
 - Contato e perguntas frequentes
